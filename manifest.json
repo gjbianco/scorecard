@@ -1,11 +1,12 @@
 {
   "name": "Scorecard",
-  "start_url": "/",
+  "scope": "/scorecard/",
+  "start_url": "/scorecard/",
   "display": "standalone",
   "icons": [
     {
       "src": "notepad.svg",
-      "sizes": "48x48",
+      "sizes": "150x150",
       "type": "image/svg"
     }
   ]

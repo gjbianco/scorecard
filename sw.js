@@ -1,6 +1,12 @@
 const VERSION = "v1";
 const CACHE_NAME = `scorecard-${VERSION}`;
-const APP_STATIC_RESOURCES = ["/", "/index.html", "notepad.svg"];
+const APP_STATIC_RESOURCES = [
+  "./",
+  "./index.html",
+  "./notepad.svg",
+  "./manifest.json",
+  "sw.js",
+];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(async () => {
@@ -27,7 +33,7 @@ self.addEventListener("fetch", (e) => {
   // when seeking an HTML page
   if (e.request.mode === "navigate") {
     // return to the index.html page
-    e.respondWith(caches.match("/"));
+    e.respondWith(caches.match("./"));
   } else {
     e.respondWith(async () => {
       const cache = await caches.open(CACHE_NAME);
