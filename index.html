@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scorecard</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="notepad.svg" />
+  </head>
+  <body>
+    <p>foo</p>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js");
+      }
+    </script>
+  </body>
+</html>

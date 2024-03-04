@@ -1,0 +1,12 @@
+{
+  "name": "Scorecard",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "notepad.svg",
+      "sizes": "48x48",
+      "type": "image/svg"
+    }
+  ]
+}
